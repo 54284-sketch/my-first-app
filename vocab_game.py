@@ -8,6 +8,10 @@ if "ans1_val" not in st.session_state:
     st.session_state.ans1_val = ""
 if "ans2_val" not in st.session_state:
     st.session_state.ans2_val = ""
+if "ans3_val" not in st.session_state:
+    st.session_state.ans3_val = ""
+if "ans4_val" not in st.session_state:
+    st.session_state.ans4_val = ""
 
 
 # 📌 ฟังก์ชันเคลียร์ค่าเมื่อกดปุ่มเริ่มใหม่
@@ -102,7 +106,7 @@ ans3 = st.text_input(
 ans4 = st.text_input(
     "ข้อ 4: A `m _ n g _ is yellow. 🥭",
     value=st.session_state.ans4_val,
-    
+)    
 # อัปเดตค่าล่าสุดเข้าตัวแปร
 st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
